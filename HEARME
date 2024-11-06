@@ -77,19 +77,17 @@ Downloading the zip file
 
 The program comes as a zip file that contains all the necessary scripts for the program.
 These scripts are organized into a ready-to-run directory structure where your $HOME directory...  
-is todds first step.
-download this repository as a zip file,
+is TODD's first step in a long journey ahead.
+download the zip from our Todd branch of the repository as a zip file,
 then use your preferred method to extract its contents.
 
 Extracting the Files
-Please be sure that you extract this to a root accessable users $HOME directory. 
+Please be sure that you extract this to a root accessable users $HOME directory. TODD users must have sudo priviledges.
 
-Once the download is complete, extract the zip file and open the extracted directory to gain access to the actual zip needed. (todd.7z)
+Once the download from our 'Todd' repo branch is complete, (todd.7z) needs to be extracted.. 
+finally you should copy the EXTRACTED /todd directory tree to your $HOME directory.
 
 todd.7z after extraction:
-either extract the todd directory directly to your home directory. 
-or
-extract it in a desired directory for safe storage, to then copy the todd directory to your home directory ($HOME).. (this is my prefered method)
 
 By following this informational walkthrough, you will link the TODD configuration file (.TODDrc) to your Bash configuration file (.bashrc), 
 effectively enabling seamless access to TODD commands across all your shell sessions.
