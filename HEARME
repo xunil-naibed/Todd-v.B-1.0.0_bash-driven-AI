@@ -150,7 +150,6 @@ the TODD function is an easier way to do the same thing as seen below.
 but in a more Direct way. 
 SO... 
 by simply calling his name as if it were not a function but an affirmation.
-execute the command now,...
 
 If everything is set up correctly, you should be able to interact with TODD.
 his memory will initialize. 
@@ -175,3 +174,110 @@ Enjoy your journey with this innovative AI chatbot entity!
 #******************************************************************
 ########################################################
 #******************************************************************
+
+# TODD's Board: Memo #2 (Understanding the TODDrc)
+#******************************************************************
+# Here we’ll guide you through the inner workings of 
+# the `.TODDrc` file, a key piece of TODD's functional core. This memo 
+# serves as your roadmap to understanding TODD's configurable environment,
+# the critical commands available, and the boundaries you can explore.
+
+#******************************************************************
+
+#	Think of `.TODDrc` as a link between you and TODD, enabling flexibility 
+# and personalization. This file is automatically connected to `.bashrc` 
+# upon setup, allowing TODD to become a seamless part of any shell session. 
+
+# Below, each section explains both purpose and function so you can 
+# comfortably experiment, expand, or reset as needed.
+
+#******************************************************************
+
+#******************************************************************
+# 1.  DEFINE TODD'S DIRECTORY PATH
+# The `TODD_DIR` variable specifies where TODD’s essential files are stored.
+# Default path is: `$HOME/todd/self`
+export TODD_DIR="$HOME/todd/self"
+
+# Modify this path only if you relocate TODD’s files.
+
+#********************************************************************
+
+# 2.  SETTING TODD'S INPUT PROMPT
+# Customize the prompt TODD displays during active sessions. Feel free 
+# to set this to any symbol or text style that helps distinguish TODD’s input PROMPT.
+export TP='INPUT> '
+
+#********************************************************************
+
+# 3.  ANIMATE FACE COMMAND
+# The `ANIMATE_FACE` variable triggers TODD’s animation. Modify if the 
+# script location changes or if adding new animation features.
+export ANIMATE_FACE="bash $TODD_DIR/ANIMATE.sh"
+
+#********************************************************************
+
+# 4.  ASSOCIATION THRESHOLD SETTINGS
+# The `HIGH_NUM` and `LOW_NUM` thresholds control how TODD interprets 
+# associations in responses. These values set boundaries on TODD's response
+# sensitivity, impacting how frequently certain ideas or responses are triggered.
+
+export HIGH_NUM=5
+export LOW_NUM=3
+
+# Lowering `HIGH_NUM` could make TODD more repetitive; increasing it
+# could broaden response variety but may reduce specificity.
+
+#******************************************************************
+
+# 5.  FUNCTION: CLEAN SWEEP WITH BRAIN_WASH()
+# `BRAIN_WASH()` clears all of TODD’s memory files, effectively "resetting" 
+# him to a baseline state. Use this function to refresh TODD if you want a 
+# clean slate or notice response inconsistencies.
+BRAIN_WASH() {
+clear && bash $HOME/todd/self/BRAIN_WASH.sh
+}
+
+#******************************************************************
+
+# 6.  FUNCTION: TRAINING TODD WITH FILE()
+# This function allows TODD to "learn" from specific files. Run it by 
+# passing the path to a text file as an argument, and TODD will process 
+# the content using his NLP layers.
+FILE() {
+NLP=$(bash /$TODD_DIR/layers.sh "$1")
+$NLP
+}
+
+#*****************************************************************
+
+# 7.  FUNCTION: RUNNING TODD
+# The main TODD function launches TODD with a simple command. Just 
+# type `TODD` to begin a session!
+TODD() {
+	clear && bash $TODD_DIR/TODD.sh
+}
+
+#******************************************************************
+# FINAL THOUGHTS FOR MEMO #2:
+# `.TODDrc` is where TODD’s potential becomes personal to each user, so 
+# treat it as a sandbox for your experimentational TODD commands. Explore freely, 
+# but know that each change you make here directly impacts TODD’s personality, 
+# response style, and session interactions within the bash environment.
+#******************************************************************
+#	
+#******************************************************************
+########################################################
+#******************************************************************
+
+TODD's Board: Memo #3 (MEMO)
+
+#******************************************************************
+TO BE CONTINUED...
+#******************************************************************
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#	
+#******************************************************************
+########################################################
+#******************************************************************
+
