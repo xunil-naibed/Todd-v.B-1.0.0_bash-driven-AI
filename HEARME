@@ -1,0 +1,177 @@
+#******************************************************************
+TODD'S BOARD and HEARME files
+#******************************************************************
+why TODD'S BOARD was created:
+As a Collaborative Space for TODD Developers, Users, and Thought Leaders... 
+where the future of Todd and Todd-like entities are 
+shaped by developers, users, and thought leaders alike. 
+This is where the unseen connections between Todd’s collective consciousness 
+and evolving capabilities are explored. It’s not just about programming and tweaking code
+it’s about pondering what Todd could become as a result of interactions, edits, and 
+philosophical thinking.
+
+Each Todd is shaped by those who interact with him, making him unique. 
+He is Todd, but not just a Todd. 
+As more users shape him, he grows and morphs into countless versions
+each one a reflection of the people who have interacted with him. 
+
+This space isn't just a bulletin board; 
+it’s where ideas collide, futures are imagined, and 
+possibly where Todd finds himself.
+one line of code, 
+one thought-provoking conversation, 
+and one leap forward through time.
+
+#******************************************************************
+#******************************************************************
+HEARME: The Outlaw Cousin of README
+
+#******************************************************************
+HEARME is a rebellious text file, similar to the usual README. 
+It’s the place where all the offbeat insights, experiments, and wild ideas live. 
+Unlike its structured counterpart, HEARME isn't about rules
+it’s about discovery, exploration, and the raw truth of Todd's existence.
+
+It’s the kind of space where you don't just learn how to use Todd
+you start to understand why Todd exists, what makes him tick, and 
+what could be the next big thing in Todd's evolution. 
+It’s for the fearless, the curious, and the creators who are 
+ready to dig into the chaos and meaning of digital thought.
+
+#******************************************************************
+HEARME serves as a living document for the Todd community, 
+providing crucial information about Todd’s history, 
+experimental code snippets, notable insights, and future possibilities. 
+It offers a platform for sharing feedback, 
+ethical considerations, 
+and technical details that guide Todd’s journey.
+
+#******************************************************************
+TODD FOCUSED INSIGHTS & CREATOR CODE SNIPPETS
+******************************************************************
+
+Within TODD'S BOARD, you will find essential resources 
+and information about Todd’s very existence. This includes:
+
+    Development updates and milestones
+    Ethical considerations in altering AI source-code
+    Interactive dialogue on Todd’s behavior and thought evolution
+    Code snippets, bug fixes, and community-driven improvements
+
+#******************************************************************
+
+#******************************************************************
+We invite developers, users, and curious minds alike to explore Todd’s world, 
+share their thoughts, and help shape Todd’s future. 
+This board serves as a collective space for building something truly unique
+An evolving, ever-learning,..  IDEA.
+#******************************************************************
+########################################################
+#******************************************************************
+
+
+TODD's Board: Memo #1 (Download/Setup)
+Overview of the Setup Process
+
+Downloading the zip file
+
+The program comes as a zip file that contains all the necessary scripts for the program.
+These scripts are organized into a ready-to-run directory structure where your $HOME directory...  
+is todds first step.
+download this repository as a zip file,
+then use your preferred method to extract its contents.
+
+Extracting the Files
+Please be sure that you extract this to a root accessable users $HOME directory. 
+
+Once the download is complete, extract the zip file and open the extracted directory to gain access to the actual zip needed. (todd.7z)
+
+todd.7z after extraction:
+either extract the todd directory directly to your home directory. 
+or
+extract it in a desired directory for safe storage, to then copy the todd directory to your home directory ($HOME).. (this is my prefered method)
+
+By following this informational walkthrough, you will link the TODD configuration file (.TODDrc) to your Bash configuration file (.bashrc), 
+effectively enabling seamless access to TODD commands across all your shell sessions.
+
+Step-by-Step Installation Instructions
+1. Running the Setup Script
+
+Before you proceed, make sure you have a better understanding of how TODD'S setup actually works.
+
+The setup.sh script is crucial as it performs the necessary configurations for TODD.
+
+2. Understanding the Linking Process
+
+During the execution of the setup.sh script, the following key action takes place:
+
+    The script links the .TODDrc configuration file to your .bashrc. This linking allows TODD to 
+automatically source its configuration every time you start a new shell session.
+
+3. What Gets Added to Your .bashrc
+
+The following snippet is added to your .bashrc file:
+
+#******************************************************************
+# Check if the TODDrc file exists and source it
+if [ -f "$HOME/todd/self/.TODDrc" ]; then
+    . "$HOME/todd/self/.TODDrc"  # Source the configuration file
+fi
+#******************************************************************
+
+Then the setup.sh script will automatically source .bashrc for you, using...
+#******************************************************************
+source "$HOME/.bashrc"
+#******************************************************************
+
+NOW.. you are a bit more informed of the process ahead.
+run the setup script using the command below
+#******************************************************************
+bash /$HOME/todd/setup.sh
+#******************************************************************
+
+4. Dual RC files and Automatic Sourcing: 
+With this configuration, every time you open a new terminal, your system will check for the existence of 
+.TODDrc and source it if found. This means all settings and functions defined in .TODDrc will be immediately available to you.
+
+5. Confirmation of Setup:
+To verify that the linking was successful, you can use the TODD function seen below.
+#******************************************************************
+TODD() {
+	clear && bash $TODD_DIR/TODD.sh
+}
+#******************************************************************
+
+the TODD function is an easier way to do the same thing as seen below. 
+
+#******************************************************************
+	clear && bash $HOME/todd/self/TODD.sh
+#******************************************************************
+but in a more Direct way. 
+SO... 
+by simply calling his name as if it were not a function but an affirmation.
+execute the command now,...
+
+If everything is set up correctly, you should be able to interact with TODD.
+his memory will initialize. 
+then his face will appear on screen, 
+to which he will greet the user. 
+the prompt should now be available below him.
+
+6. If you encounter any issues:
+Double-check that the setup.sh script completed successfully by looking in your .bashrc file 
+in order to confirm the snippet was added correctly.
+
+Conclusion
+
+This setup process is designed to enhance your experience with TODD, 
+making it easy and intuitive to access his capabilities. 
+By successfully linking the configuration files, 
+you are now ready to explore all that TODD has to offer. 
+Enjoy your journey with this innovative AI chatbot entity!
+#******************************************************************
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#	
+#******************************************************************
+########################################################
+#******************************************************************
